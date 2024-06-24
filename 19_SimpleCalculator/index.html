@@ -1,22 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Two numbers</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
-    <div class="contents">
-	
-	<input type="number" id="num1" placeholder="Enter The First Number"> <br>
-	<input type="number" id="num2" placeholder="Enter The Second Number"> <br>
-	<h4>Enter the Operant</h4>
-	<h5>Add(1),Sub(2),Mul(3),Div(4)</h5>
-	<input type="text" id="num" placeholder="Enter The Operant Number"> <br>
-	<button type="submit" id="button" onclick="calculate()">Find Day</button>
-	<p id="result"></p>
-    </div>
+    <div class="calculator contents">
+        <h5>Simple Calculator</h5>
+        <div class="screen"><input type="text" name="display" id="display" disabled></div>
+        <div><input type="button" name="seven" value="7" class="btn"></div>
+        <div><input type="button" name="eight" value="8" class="btn"></div>
+        <div><input type="button" name="nine" value="9" class="btn"></div>
+        <div><input type="button" name="divide" value="/" class="btn"></div>
+        <div><input type="button" name="four" value="4" class="btn"></div>
+        <div><input type="button" name="five" value="5" class="btn"></div>
+        <div><input type="button" name="six" value="6" class="btn"></div>
+        <div><input type="button" name="multiply" value="x" class="btn"></div>
+        <div><input type="button" name="one" value="1" class="btn"></div>
+        <div><input type="button" name="two" value="2" class="btn"></div>
+        <div><input type="button" name="three" value="3" class="btn"></div>
+        <div><input type="button" name="minus" value="-" class="btn"></div>
+        <div><input type="button" name="clear" value="C" class="btn"></div>
+        <div><input type="button" name="zero" value="0" class="btn"></div>
+        <div><input type="button" name="equal" value="=" class="btn"></div>
+        <div><input type="button" name="plus" value="+" class="btn"></div>
 
+
+
+    <script type="text/javascript" src="script/script.js"></script>
+    </div>
 </body>
 </html>
