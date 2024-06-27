@@ -1,0 +1,39 @@
+body{
+    width:100%;
+    height:100%;
+    align-items:center;
+    align-contents:center;
+    justify-contents:center;
+
+}
+input{
+    width:403px;
+    height:40px;
+    border:1px solid wheat;
+    border-radius:5px;
+    margin-top:5px;
+}
+button{
+    margin-top:8px;
+    height:30px;
+    width:200px;
+    font-weight:bold;
+    color:wheat;
+    background-color:black;
+    border-radius:5px;
+}
+.contents{
+    position:absolute;
+    top:40%;
+    left:20%;
+}
+p{
+    width:403px;
+    text-align:center;
+    background-color:wheat;
+    border-radius:5px;
+    height:25px;
+    padding:5px 20px;
+    box-sizing:border-box;
+    color:black;
+}
