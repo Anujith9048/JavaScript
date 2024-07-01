@@ -1,7 +1,7 @@
 function findPro() {
     var num = parseInt(document.getElementById("num").value);
     var pro = 1;
-
+   if(!isNaN(num)){
     if (!isNaN(num) && num >= 0) {
         while (num > 0) {
             pro = pro * (num % 10);
@@ -11,4 +11,8 @@ function findPro() {
     } else {
         document.getElementById("result").innerText = "! Please enter a valid positive number.";
     }
+    }
+    else{
+        document.getElementById("result").innerText = "Not a number" ;
+}
 }

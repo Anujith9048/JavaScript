@@ -1,6 +1,6 @@
 function findDay(){ 
     var num = parseFloat(document.getElementById("num").value);
-
+ if(!isNaN(num)){
     let day;
     switch (num) {
       case 0:
@@ -24,5 +24,9 @@ function findDay(){
       case  6:
         day = "Saturday";
 }
-document.getElementById("result").innerText = "Today is " + day;
+    document.getElementById("result").innerText = "Today is " + day;
+ }
+ else{
+    document.getElementById("result").innerText = "Not  a number";
+ }
 }

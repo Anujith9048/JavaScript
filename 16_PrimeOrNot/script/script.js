@@ -1,7 +1,7 @@
 function findState() {
     var num = parseFloat(document.getElementById("num").value);
     let isPrime = true;
-
+    if(!isNaN(num)){
     if (num === 1) {
         document.getElementById("result").innerText = num + " can be prime or composite";
     } else if (num > 1) {
@@ -19,5 +19,9 @@ function findState() {
         }
     } else {
         document.getElementById("result").innerText = num + " is not a Prime number!";
+    }
+    }
+    else{
+        document.getElementById("result").innerText = "not a number!";
     }
 }
