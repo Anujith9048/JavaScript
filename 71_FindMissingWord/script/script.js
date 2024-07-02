@@ -4,9 +4,11 @@ function findState() {
     str = str.toUpperCase();
   
     if(!isNaN(str)){
-	document.getElementById("result").innerText = "Enter letters";
+	document.getElementById("resultError").innerText = "Enter letters";
+	document.getElementById("result").innerText = "";
     }
     else{
+	document.getElementById("resultError").innerText = "";
 	
 	if(str.length === 0){
 	    document.getElementById("result").innerText = "No letters found";

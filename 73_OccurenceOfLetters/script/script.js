@@ -4,7 +4,7 @@ function findState() {
     str = str.trim();
     let lowerStr = str.toLowerCase(); 
     let letterCount = {};
-                                   
+    if(isNaN(str)){                               
     for (let i = 0; i < lowerStr.length; i++) { 
         let char = lowerStr[i];
                                                              
@@ -20,5 +20,9 @@ function findState() {
 	var res= words[word].replace("{",""); 
 	res= res.replace("}","");
         document.getElementById("result").innerText += res+"\n";
+    }
+    }
+    else{
+        document.getElementById("resultError").innerText ="Enter string without numbers";
     }
 }

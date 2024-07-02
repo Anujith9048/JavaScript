@@ -3,6 +3,7 @@ function findState() {
     str = str.trim();
     var words = str.split(' ');
     var newStr = '';
+    if(isNaN(str)){
     for (let word of words) {
         var revWord = word.split('').reverse().join('');
         console.log(revWord)
@@ -17,4 +18,8 @@ function findState() {
     }
     newStr = newStr.trim();
     document.getElementById("result").innerText = newStr;
+    }
+    else{
+        document.getElementById("resultError").innerText = "Enter string without numbers";
+    }
 }

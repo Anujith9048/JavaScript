@@ -3,6 +3,10 @@ function findState() {
     str = str.trim();
     var len = str.length;
     var lastChar=str[len - 1];
-    document.getElementById("result").innerText = lastChar;
-
+    if(isNaN(str)){
+        document.getElementById("result").innerText = lastChar;
+    }
+    else{
+        document.getElementById("resultError").innerText = "Enter string without numbers";
+    }
 }
